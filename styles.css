@@ -21,13 +21,6 @@ body {
     align-items: center;
 }
 
-.main-header {
-    background-image: url('images/illustration-1.svg');
-    background-size: cover;
-    height: 12rem;
-    margin-top: 7.5rem;
-}
-
 .main-nav__brand {
     margin-right: auto;
 }
@@ -45,4 +38,38 @@ body {
 
 .main-nav__item {
     padding: 0.8rem;
+    cursor: pointer;
 }
+
+.main-header {
+    background-image: url('images/illustration-1.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin-top: 7.5rem;
+    margin-bottom: -30rem;
+}
+
+.intro {
+    text-align: center;
+}
+
+.intro-input {
+    width: 16rem;
+    padding: 0.5rem 1rem;
+    margin: 0.8rem;
+    border-radius: 5px;
+}
+
+.intro-button {
+    display: block;
+    margin: 0 auto;
+    width: 16rem;
+    border: none;
+    padding: 0.5rem 1rem;
+    background: hsl(224, 93%, 58%);
+    color: white;
+    border-radius: 5px;
+}
+
+
