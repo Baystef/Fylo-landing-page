@@ -1,0 +1,48 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+.main-nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0.5rem 1rem;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+.main-header {
+    background-image: url('images/illustration-1.svg');
+    background-size: cover;
+    height: 12rem;
+    margin-top: 7.5rem;
+}
+
+.main-nav__brand {
+    margin-right: auto;
+}
+
+.main-nav__brand img {
+    height: 2rem;
+}
+
+.main-nav__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.main-nav__item {
+    padding: 0.8rem;
+}
