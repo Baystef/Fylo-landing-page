@@ -27,6 +27,8 @@ body {
 
 .main-nav__brand img {
     height: 2rem;
+    vertical-align: middle;
+    /* width: 5.5rem; */
 }
 
 .main-nav__items {
@@ -34,6 +36,7 @@ body {
     padding: 0;
     list-style: none;
     display: flex;
+    vertical-align: middle;
 }
 
 .main-nav__item {
@@ -41,13 +44,18 @@ body {
     cursor: pointer;
 }
 
+.grid-container {
+    display: grid;
+    padding: 0.5rem 1rem;
+}
+
 .main-header {
     background-image: url('images/illustration-1.svg');
     background-size: contain;
     background-repeat: no-repeat;
-    height: 100%;
-    margin-top: 7.5rem;
-    margin-bottom: -30rem;
+    background-position: center;
+    height: 12.5rem;
+    margin-top: 5rem;
 }
 
 .intro {
@@ -59,6 +67,11 @@ body {
     padding: 0.5rem 1rem;
     margin: 0.8rem;
     border-radius: 5px;
+    border: 1px solid #424141;
+}
+
+.intro-input::placeholder {
+    color: #cccccc;
 }
 
 .intro-button {
@@ -70,6 +83,16 @@ body {
     background: hsl(224, 93%, 58%);
     color: white;
     border-radius: 5px;
+    box-shadow: 1px 1px 5px rgb(56, 56, 56);
+    transition: all 0.2s ease-in;
 }
 
+.intro-button:hover {
+    box-shadow: 0px 0px 0px transparent;
+}
 
+@media (min-width: 40rem) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
