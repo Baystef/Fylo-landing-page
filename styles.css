@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
 *,
 *::before,
 *::after {
@@ -6,13 +9,26 @@
 
 html {
     height: 100%;
+    width: 100%;
 }
 
 body {
     height: 100%;
+    /* width: 100%; */
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+}
+
+.wrapper {
+    display: grid;
+    margin-top: 60px;
 }
 
 .main-nav {
+    background-color: white;
     width: 100%;
     position: fixed;
     top: 0;
@@ -77,6 +93,7 @@ body {
 }
 
 .intro-button {
+    font-family: 'Raleway', sans-serif;
     display: block;
     margin: 0 auto;
     width: 16rem;
@@ -100,6 +117,14 @@ body {
     margin-top: 5rem;
     margin-bottom: -1.3rem;
 }
+
+/* #grid-prod::before {
+    content: url('images/bg-curve-mobile.svg');
+    position: absolute;
+    padding: 0;
+    top: 85%;
+    box-sizing: content-box;
+} */
 
 .productive {
     background-image: url('images/illustration-2.svg');
@@ -126,6 +151,7 @@ body {
 .productive-info__link {
     color: hsl(170, 45%, 43%);
     text-decoration: none;
+    font-family: 'Raleway', sans-serif;
     border-bottom: 1px solid hsl(170, 45%, 43%);
     padding: 0.5rem 0;
     vertical-align: middle;
@@ -135,7 +161,7 @@ body {
 .productive-info__link::after {
     content: url('images/icon-arrow.svg');
     vertical-align: middle;
-    padding-left: 2px;
+    padding-left: 8px;
     padding-top: 4px
 }
 
@@ -157,8 +183,8 @@ body {
 }
 
 .avatar-testimonial {
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 50%;
 }
 
@@ -171,6 +197,7 @@ body {
 }
 
 .founder-name {
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     padding-bottom: 0.2rem;
 }
@@ -214,10 +241,8 @@ body {
 
 .email-phone img {
     height: 100%;
-    vertical-align: middle;
     margin-right: 0.8rem;
 }
-
 
 .footer-links {
     list-style: none;
@@ -240,6 +265,7 @@ body {
     width: 7.5rem;
     margin: 0 auto;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .social-icon {
@@ -247,7 +273,7 @@ body {
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
-    /* text-align: center; */
+    text-align: center;
     padding: 0.5rem;
 }
 
@@ -256,4 +282,70 @@ body {
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    /* .main-header {
+        grid-area: main-header;
+    }
+
+    .intro {
+        grid-area: intro;
+    } */
+
+    .productive {
+        grid-area: productive-img;
+    }
+
+    .productive-info {
+        grid-area: productive-info;
+    }
+
+
+    .productive-testimonial {
+        grid-area: testimonial;
+        margin-left: 0;
+    }
+
+    /* .signUp {
+        grid-area: signUp;
+    }
+
+    .footer {
+        grid-area: footer;
+    } */
+
+    /* .wrapper {
+        grid-template-areas: 
+        "intro main-header"
+        "productive-info productive-img"
+        "prod-link productive-img"
+        "testimonial productive-img"
+        "signUp signUp"
+        "footer footer";
+    } */
+
+   .main-header {
+       order: 2;
+   }
+
+   .intro {
+       
+   }
+
+   .productive {
+       order: 2;
+   }
+
+   .productive-info__header {
+       text-align: left;
+   }
+
+   .productive-link__container {
+        text-align: left;
+   }
+
+   #grid-prod {
+    grid-template-areas: 
+    "productive-info productive-img"
+    "testimonial productive-img"
+   }
 }
