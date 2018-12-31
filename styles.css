@@ -14,17 +14,22 @@ html {
 
 body {
     height: 100%;
-    /* width: 100%; */
     font-family: 'Open Sans', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Raleway', sans-serif;
 }
 
 .wrapper {
     display: grid;
     margin-top: 60px;
+    width: 100%;
 }
 
 .main-nav {
@@ -141,6 +146,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .productive-info__header {
     text-align: center;
+    font-weight: 700;
 }
 
 .productive-link__container {
@@ -151,7 +157,6 @@ h1, h2, h3, h4, h5, h6 {
 .productive-info__link {
     color: hsl(170, 45%, 43%);
     text-decoration: none;
-    font-family: 'Raleway', sans-serif;
     border-bottom: 1px solid hsl(170, 45%, 43%);
     padding: 0.5rem 0;
     vertical-align: middle;
@@ -225,7 +230,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contact {
-   margin: 1rem 0;
+    margin: 1rem 0;
 }
 
 .email-phone {
@@ -323,29 +328,61 @@ h1, h2, h3, h4, h5, h6 {
         "footer footer";
     } */
 
-   .main-header {
-       order: 2;
-   }
+    .main-header {
+        order: 2;
+    }
 
-   .intro {
-       
-   }
-
-   .productive {
-       order: 2;
-   }
-
-   .productive-info__header {
-       text-align: left;
-   }
-
-   .productive-link__container {
+    .intro {
         text-align: left;
-   }
+        padding-right: 10rem;
+    }
 
-   #grid-prod {
-    grid-template-areas: 
-    "productive-info productive-img"
-    "testimonial productive-img"
-   }
+    .intro-form {
+        display: flex;
+        align-items: center;
+    }
+
+    .productive {
+        order: 2;
+        margin: auto 0;
+    }
+
+    .productive-info__header {
+        text-align: left;
+    }
+
+    .productive-link__container {
+        text-align: left;
+    }
+
+    #grid-prod {
+        grid-template-areas:
+            "productive-info productive-img"
+            "testimonial productive-img"
+    }
+
+    .signUp {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .signUp-text {
+        text-align: left;
+        width: 500px;
+    }
+
+    .signUp-form {
+        padding-top: 0;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .footer nav {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-evenly;
+    }
 }
