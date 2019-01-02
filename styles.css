@@ -65,11 +65,16 @@ h6 {
 .main-nav__item {
     padding: 0.8rem;
     cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.main-nav__item:hover {
+    border-bottom: 5px solid hsl(170, 45%, 43%);
 }
 
 .grid-container {
     display: grid;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 3rem;
 }
 
 .first-section {
@@ -82,7 +87,7 @@ h6 {
     background-repeat: no-repeat;
     background-position: center;
     min-height: 27rem;
-    margin-top: 5rem;
+    margin-top: 1rem;
 }
 
 .intro {
@@ -291,13 +296,10 @@ h6 {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    /* .main-header {
-        grid-area: main-header;
+    .main-nav {
+        padding-left: 3rem; 
+        padding-right: 3rem;
     }
-
-    .intro {
-        grid-area: intro;
-    } */
 
     .productive {
         grid-area: productive-img;
@@ -312,24 +314,6 @@ h6 {
         margin-left: 0;
     }
 
-    /* .signUp {
-        grid-area: signUp;
-    }
-
-    .footer {
-        grid-area: footer;
-    } */
-
-    /* .wrapper {
-        grid-template-areas: 
-        "intro main-header"
-        "productive-info productive-img"
-        "prod-link productive-img"
-        "testimonial productive-img"
-        "signUp signUp"
-        "footer footer";
-    } */
-
     .main-header {
         order: 2;
     }
@@ -342,18 +326,28 @@ h6 {
     .intro-form {
         display: flex;
         align-items: center;
+        margin-left: 0;
     }
+
+    .intro-input {
+        flex: 2;
+    }
+
+    .intro-button {
+        flex: 1;
+    }
+
+    /* .curve {
+        width: 100%;
+        margin-bottom: -5rem;
+    } */
 
     .productive {
         order: 2;
         margin: auto 0;
     }
 
-    .productive-info__header {
-        text-align: left;
-    }
-
-    .productive-link__container {
+    .productive-info__header, .productive-link__container {
         text-align: left;
     }
 
@@ -367,6 +361,8 @@ h6 {
         display: flex;
         align-items: baseline;
         justify-content: space-between;
+        padding-left: 3rem;
+        padding-right: 3rem;
     }
 
     .signUp-text {
@@ -376,22 +372,26 @@ h6 {
 
     .signUp-form {
         padding-top: 0;
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
     }
 
-    .signUp-form input {
+    .signUp-input {
         width: 25rem;
+        margin-left: 0;
+        grid-column: 1/-1;
     }
 
-    .signUp-form button {
+    .signUp-button {
         width: 10rem;
+        margin: 0;
     }
 
     .footer {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-
+        padding: 3rem;
     }
 
     .footer-logo {
@@ -401,6 +401,7 @@ h6 {
     .footer nav {
         display: flex;
         align-items: baseline;
+        width: 40rem;
         justify-content: space-evenly;
     }
 
