@@ -72,12 +72,16 @@ h6 {
     padding: 0.5rem 1rem;
 }
 
+.first-section {
+    align-items: center;
+}
+
 .main-header {
     background-image: url('images/illustration-1.svg');
-    background-size: contain;
+    background-size: 80% auto;
     background-repeat: no-repeat;
     background-position: center;
-    height: 12.5rem;
+    min-height: 27rem;
     margin-top: 5rem;
 }
 
@@ -85,7 +89,7 @@ h6 {
     text-align: center;
 }
 
-.intro-input {
+.input {
     width: 16rem;
     padding: 0.5rem 1rem;
     margin: 0.8rem;
@@ -93,11 +97,11 @@ h6 {
     border: 1px solid #424141;
 }
 
-.intro-input::placeholder {
+.input::placeholder {
     color: #cccccc;
 }
 
-.intro-button {
+.button {
     font-family: 'Raleway', sans-serif;
     display: block;
     margin: 0 auto;
@@ -111,7 +115,7 @@ h6 {
     transition: all 0.2s ease-in;
 }
 
-.intro-button:hover {
+.button:hover {
     box-shadow: 0px 0px 0px transparent;
 }
 
@@ -133,10 +137,10 @@ h6 {
 
 .productive {
     background-image: url('images/illustration-2.svg');
-    background-size: contain;
+    background-size: 75% auto;
     background-repeat: no-repeat;
     background-position: center;
-    height: 12.5rem;
+    min-height: 27rem;
     margin: 3rem 0;
 }
 
@@ -160,7 +164,6 @@ h6 {
     border-bottom: 1px solid hsl(170, 45%, 43%);
     padding: 0.5rem 0;
     vertical-align: middle;
-
 }
 
 .productive-info__link::after {
@@ -304,7 +307,6 @@ h6 {
         grid-area: productive-info;
     }
 
-
     .productive-testimonial {
         grid-area: testimonial;
         margin-left: 0;
@@ -363,6 +365,7 @@ h6 {
 
     .signUp {
         display: flex;
+        align-items: baseline;
         justify-content: space-between;
     }
 
@@ -373,16 +376,35 @@ h6 {
 
     .signUp-form {
         padding-top: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .signUp-form input {
+        width: 25rem;
+    }
+
+    .signUp-form button {
+        width: 10rem;
     }
 
     .footer {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+
+    }
+
+    .footer-logo {
+        grid-column: 1 / -1;
     }
 
     .footer nav {
         display: flex;
         align-items: baseline;
         justify-content: space-evenly;
+    }
+
+    .social-icons {
+        margin-top: 2rem;
     }
 }
