@@ -69,7 +69,7 @@ h6 {
 }
 
 .main-nav__item:hover {
-    border-bottom: 5px solid hsl(170, 45%, 43%);
+    border-bottom: 3px solid hsl(170, 45%, 43%);
 }
 
 .grid-container {
@@ -139,6 +139,11 @@ h6 {
     top: 85%;
     box-sizing: content-box;
 } */
+
+.curve {
+    width: 100%;
+    margin-bottom: -1rem;
+}
 
 .productive {
     background-image: url('images/illustration-2.svg');
@@ -301,6 +306,10 @@ h6 {
         padding-right: 3rem;
     }
 
+    .curve {
+        margin-bottom: -5rem;
+    }
+
     .productive {
         grid-area: productive-img;
     }
@@ -336,11 +345,6 @@ h6 {
     .intro-button {
         flex: 1;
     }
-
-    /* .curve {
-        width: 100%;
-        margin-bottom: -5rem;
-    } */
 
     .productive {
         order: 2;
