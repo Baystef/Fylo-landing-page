@@ -12,4 +12,4 @@ let width = window.matchMedia("(min-width: 40rem)");
 
 switchImage(width);
 
-width.addEventListener(switchImage);
+// width.addEventListener(switchImage);
